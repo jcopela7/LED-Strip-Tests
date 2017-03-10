@@ -9,7 +9,7 @@ int status= 0;
 
 void setup() {
   size(450,500);
-  myPort = new Serial(this,Serial.list()[0],9600);
+  myPort = new Serial(this,Serial.list()[1],9600);
   myPort.bufferUntil('\n');
   println(Serial.list());
 }
